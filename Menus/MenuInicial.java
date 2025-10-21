@@ -1,13 +1,9 @@
 package Menus;
-import java.util.Scanner;
-import java.util.UUID;
-
-import javax.swing.undo.StateEdit;
-
+import Models.Voo;
 import java.util.ArrayList;
 import java.util.List;
-
-import Models.Voo;
+import java.util.Scanner;
+import java.util.UUID;
 
 public class MenuInicial {
 
@@ -46,14 +42,16 @@ public class MenuInicial {
 
   public static void ValidarTamanhoCodigoVoo(UUID codigoVoo){
     List<Voo> voos = new ArrayList<>();
-    voos.Add(1, "Es", "SP", 12, 23,1324 );
 
   }
 
-  public String RealizarReserva(){
-
+  public static void RealizarReserva()
+  {
 
   }
 
+  public static void RealizarCheckIn(){}
+
+  public static void VisualizarDetalhes(){}
 }
 

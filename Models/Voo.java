@@ -1,7 +1,6 @@
 package Models;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
+
 public class Voo {
   
   private int Id;
@@ -9,14 +8,12 @@ public class Voo {
   private String Origem;
   private String Destino;
 
-  public Voo(int id, String origem, String destino) {
+  public Voo(int id, String origem, String destino, UUID codigoVoo) {
     Id = id;
     CodigoVoo = codigoVoo;
     Origem = origem;
     Destino = destino;
   }
-  List<String> voos = new ArrayList<>();
-  voos.add(new Voo(1, "sp", "es"));
 
   public int getId() {
     return Id;
