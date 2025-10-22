@@ -18,7 +18,6 @@ public class Administrador {
         this.ListaVoos = ListaVoos;
     }
 
-    // login
     public boolean autenticar(String senhaDigitada) {
         return this.senha.equals(senhaDigitada);
     }
