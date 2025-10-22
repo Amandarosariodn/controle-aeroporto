@@ -8,8 +8,8 @@ import java.util.*;
 public class Administrador {
     private String Nome;
     private String Senha;
-    private Queue<Reserva> filaReservasPendentes; // fila de reservas pendentes
-    private List<Voo> listaVoos; // lista de voos disponíveis
+    private Queue<Reserva> FilaReservasPendentes; // fila de reservas pendentes
+    private List<Voo> ListaVoos; // lista de voos disponíveis
 
     public Administrador(String nome, String senha, Queue<Reserva> filaReservasPendentes, List<Voo> listaVoos) {
         this.nome = nome;
