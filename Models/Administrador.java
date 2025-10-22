@@ -11,11 +11,11 @@ public class Administrador {
     private Queue<Reserva> FilaReservasPendentes; // fila de reservas pendentes
     private List<Voo> ListaVoos; // lista de voos disponíveis
 
-    public Administrador(String nome, String senha, Queue<Reserva> filaReservasPendentes, List<Voo> listaVoos) {
-        this.nome = nome;
-        this.senha = senha;
-        this.filaReservasPendentes = filaReservasPendentes;
-        this.listaVoos = listaVoos;
+    public Administrador(String Nome, String Senha, Queue<Reserva> FilaReservasPendentes, List<Voo> ListaVoos) {
+        this.Nome = Nome;
+        this.Senha = Senha;
+        this.FilaReservasPendentes = FilaReservasPendentes;
+        this.ListaVoos = ListaVoos;
     }
 
     // login
