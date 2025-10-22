@@ -6,8 +6,8 @@ import java.util.*;
 //Responsável pelas reservas pendentes.
 
 public class Administrador {
-    private String nome;
-    private String senha;
+    private String Nome;
+    private String Senha;
     private Queue<Reserva> filaReservasPendentes; // fila de reservas pendentes
     private List<Voo> listaVoos; // lista de voos disponíveis
 
