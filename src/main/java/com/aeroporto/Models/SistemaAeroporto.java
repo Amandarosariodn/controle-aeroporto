@@ -27,7 +27,7 @@ public class SistemaAeroporto {
 
         Voo voo1 = new Voo(
             1,
-            UUID.randomUUID(),
+            Voo.gerarCodigoVooAleatorio(),
             "São Paulo (SP)",
             "Rio de Janeiro (RJ)",
             LocalDateTime.of(2025, 12, 25, 10, 0),
@@ -38,7 +38,7 @@ public class SistemaAeroporto {
 
         Voo voo2 = new Voo(
             2,
-            UUID.randomUUID(),
+            Voo.gerarCodigoVooAleatorio(),
             "Belo Horizonte (MG)",
             "Salvador (BA)",
             LocalDateTime.of(2025, 12, 26, 14, 30),
@@ -49,7 +49,7 @@ public class SistemaAeroporto {
 
         Voo voo3 = new Voo(
             3,
-            UUID.randomUUID(),
+            Voo.gerarCodigoVooAleatorio(),
             "xique-xique (BA)",
             "Florianópolis (SC)",
             LocalDateTime.of(2025, 12, 27, 9, 15),
@@ -66,15 +66,11 @@ public class SistemaAeroporto {
     }
 
     public Voo buscarVooPorCodigo(String codigoVooString) {
-        try {
-            UUID codigoVoo = UUID.fromString(codigoVooString);
-            for (Voo voo : voos) {
-                if (voo.getCodigoVoo().equals(codigoVoo)) {
-                    return voo;
-                }
+        if (codigoVooString == null) return null;
+        for (Voo voo : voos) {
+            if (codigoVooString.equals(voo.getCodigoVoo())) {
+                return voo;
             }
-        } catch (IllegalArgumentException e) {
-            return null;
         }
         return null;
     }
