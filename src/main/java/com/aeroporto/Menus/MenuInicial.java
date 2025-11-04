@@ -16,7 +16,7 @@ public class MenuInicial {
 
 
   public static void mostrarMenu(){
-  System.out.println("\n--- BEM VINDO (A) AO AEROPORTO ---");
+  System.out.println("\n--- BEM VINDO AO AEROPORTO ---");
   System.out.println("O que deseja fazer?");
   System.out.println("1 - Realizar reserva de voo");
   System.out.println("2- Realizar check-in");

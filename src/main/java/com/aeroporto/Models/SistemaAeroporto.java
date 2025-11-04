@@ -45,6 +45,18 @@ public class SistemaAeroporto {
             LocalDateTime.of(2025, 12, 26, 16, 30),
             100
         );
+        this.voos.add(voo2);
+
+        Voo voo3 = new Voo(
+            3,
+            UUID.randomUUID(),
+            "xique-xique (BA)",
+            "Florianópolis (SC)",
+            LocalDateTime.of(2025, 12, 27, 9, 15),
+            LocalDateTime.of(2025, 12, 27, 10, 0),
+            50
+        );
+        this.voos.add(voo3);
 
 
     }
